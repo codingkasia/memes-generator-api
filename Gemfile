@@ -48,3 +48,6 @@ gem 'rest-client'
 gem 'active_model_serializers'
 gem 'rack-cors'
 gem 'react-rails'
+
+
+gem 'rails_12factor', group: :production
