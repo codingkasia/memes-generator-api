@@ -48,6 +48,3 @@ gem 'rest-client'
 gem 'active_model_serializers'
 gem 'rack-cors'
 gem 'react-rails'
-
-gem "aws-sdk-s3", require: false
-gem 'rails_12factor', group: :production
