@@ -23,6 +23,9 @@ gem 'puma'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+group :assets do
+         gem 'turbo-sprockets-rails3'
+ end
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
@@ -41,7 +44,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
-gem 'rails_12factor', group: :production
+
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
@@ -50,9 +53,5 @@ gem 'rest-client'
 gem 'active_model_serializers'
 gem 'rack-cors'
 gem 'react-rails'
-
-# group :production do
-#   gem 'pg'
-# end
 gem 'activestorage'
 
