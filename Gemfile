@@ -53,3 +53,4 @@ gem 'react-rails'
 group :production do
   gem 'pg'
 end
+gem 'activestorage'

@@ -1,4 +1,5 @@
 require_relative 'boot'
+require "active_storage"
 
 require "rails"
 # Pick the frameworks you want:
