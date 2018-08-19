@@ -51,8 +51,8 @@ gem 'active_model_serializers'
 gem 'rack-cors'
 gem 'react-rails'
 
-group :production do
-  gem 'pg'
-end
+# group :production do
+#   gem 'pg'
+# end
 gem 'activestorage'
 
