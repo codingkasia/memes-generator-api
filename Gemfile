@@ -23,9 +23,6 @@ gem 'puma'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-group :assets do
-         gem 'turbo-sprockets-rails3'
- end
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
@@ -53,5 +50,9 @@ gem 'rest-client'
 gem 'active_model_serializers'
 gem 'rack-cors'
 gem 'react-rails'
+
+# group :production do
+#   gem 'pg'
+# end
 gem 'activestorage'
 
