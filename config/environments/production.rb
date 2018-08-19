@@ -89,4 +89,15 @@ if ENV["RAILS_LOG_TO_STDOUT"].present?
   logger.formatter = config.log_formatter
   config.logger = ActiveSupport::TaggedLogging.new(logger)
 end
+
+
+
+desc 'Puma reload'
+task :puma_reload do
+  on roles(:app) do
+    execute "cd #{release_path} && kill -15 `lsof -i:9596 -t` && RAILS_ENV='#{fetch(:rails_env)}' /usr/local/rvm/bin/rvm ruby-2.3.1@mff_v2 do bundle exec puma -C /var/www/mff_v2/shared/config/puma.rb --daemon"
+  end
+end
+
+after :deploy, :puma_reload
 end
